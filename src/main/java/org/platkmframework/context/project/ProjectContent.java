@@ -18,13 +18,13 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.project;
+package org.platkmframework.context.project;
 
 import java.util.Map;
 import java.util.Properties;
 
 import org.apache.commons.lang3.StringUtils;
-import org.platkmframework.content.exception.ContentException;
+import org.platkmframework.context.exception.ContentException;
 
 /**
  *   Author:
@@ -58,7 +58,7 @@ public class ProjectContent {
     /**
      * Attribute alreadySet
      */
-    boolean alreadySet = true;
+    boolean alreadySet = false;
 
     /**
      * Constructor ProjectContent

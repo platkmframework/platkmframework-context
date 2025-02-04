@@ -18,7 +18,7 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content;
+package org.platkmframework.context;
 
 import java.lang.annotation.Annotation;
 import java.util.ArrayList;

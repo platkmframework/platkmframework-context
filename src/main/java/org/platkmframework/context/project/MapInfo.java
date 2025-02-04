@@ -1,6 +1,6 @@
 /**
  * ****************************************************************************
- *  Copyright(c) 2025 the original author Eduardo Iglesias Taylor.
+ *  Copyright(c) 2023 the original author Eduardo Iglesias Taylor.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -18,7 +18,9 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.exception;
+package org.platkmframework.context.project;
+
+import java.util.HashMap;
 
 /**
  *   Author:
@@ -26,31 +28,29 @@ package org.platkmframework.content.exception;
  *   Contributors:
  *   	Eduardo Iglesias - initial API and implementation
  */
-public class ContentException extends RuntimeException{
+public class MapInfo extends HashMap<String, String> {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     * Atributo serialVersionUID
+     */
+    private static final long serialVersionUID = 5327010767630664654L;
 
-	public ContentException() {
-		super();
-	}
+    /**
+     * create
+     * @return MapInfo
+     */
+    public static MapInfo create() {
+        return new MapInfo();
+    }
 
-	public ContentException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
-	}
-
-	public ContentException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
-	public ContentException(String message) {
-		super(message);
-	}
-
-	public ContentException(Throwable cause) {
-		super(cause);
-	}
-
+    /**
+     * add
+     * @param key key
+     * @param value value
+     * @return MapInfo
+     */
+    public MapInfo add(String key, String value) {
+        super.put(key, value);
+        return this;
+    }
 }

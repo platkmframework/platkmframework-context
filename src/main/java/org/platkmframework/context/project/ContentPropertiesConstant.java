@@ -1,6 +1,6 @@
 /**
  * ****************************************************************************
- *  Copyright(c) 2023 the original author Eduardo Iglesias Taylor.
+ *  Copyright(c) 2025 the original author Eduardo Iglesias Taylor.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -18,8 +18,14 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.project;
+package org.platkmframework.context.project;
 
+/**
+ *   Author:
+ *     Eduardo Iglesias
+ *   Contributors:
+ *   	Eduardo Iglesias - initial API and implementation
+ */
 public interface ContentPropertiesConstant {
 
     /**

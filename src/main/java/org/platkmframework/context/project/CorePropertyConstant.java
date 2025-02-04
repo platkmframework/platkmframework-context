@@ -18,7 +18,7 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.project;
+package org.platkmframework.context.project;
 
 /**
  *   Author:
@@ -109,22 +109,22 @@ public interface CorePropertyConstant {
     public static final String ORG_PLATKMFRAMEWORK_CUSTOM_FILTER_CORS = "org.platkmframework.filter.cors";
 
     /**
-     * Atributo System_Access_Control_Allow_Origin
+     * Attribute System_Access_Control_Allow_Origin
      */
-    public static final String System_Access_Control_Allow_Origin = "System_Access-Control-Allow-Origin";
+    public static final String System_Access_Control_Allow_Origin = "org.platkmframework.access.control.allow.origin";
 
     /**
-     * Atributo System_Access_Control_Allow_Methods
+     * Attribute System_Access_Control_Allow_Methods
      */
-    public static final String System_Access_Control_Allow_Methods = "System_Access-Control-Allow-Methods";
+    public static final String System_Access_Control_Allow_Methods = "org.platkmframework.access.control.allow.methods";
 
     /**
-     * Atributo System_Access_Control_Allow_Headers
+     * Attribute System_Access_Control_Allow_Headers
      */
-    public static final String System_Access_Control_Allow_Headers = "System_Access-Control-Allow-Headers";
+    public static final String System_Access_Control_Allow_Headers = "org.platkmframework.access.control.allow.headers";
 
     /**
-     * Atributo ORG_PLATKMFRAMEWORK_CONFIGURATION_INDEX_PAGE
+     * Attribute ORG_PLATKMFRAMEWORK_CONFIGURATION_INDEX_PAGE
      */
     public static final String ORG_PLATKMFRAMEWORK_CONFIGURATION_INDEX_PAGE = "org.platkmframework.server.index";
 }

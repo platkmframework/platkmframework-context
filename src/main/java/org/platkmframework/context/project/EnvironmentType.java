@@ -18,9 +18,7 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.project;
-
-import java.util.HashMap;
+package org.platkmframework.context.project;
 
 /**
  *   Author:
@@ -28,29 +26,7 @@ import java.util.HashMap;
  *   Contributors:
  *   	Eduardo Iglesias - initial API and implementation
  */
-public class MapInfo extends HashMap<String, String> {
+public enum EnvironmentType {
 
-    /**
-     * Atributo serialVersionUID
-     */
-    private static final long serialVersionUID = 5327010767630664654L;
-
-    /**
-     * create
-     * @return MapInfo
-     */
-    public static MapInfo create() {
-        return new MapInfo();
-    }
-
-    /**
-     * add
-     * @param key key
-     * @param value value
-     * @return MapInfo
-     */
-    public MapInfo add(String key, String value) {
-        super.put(key, value);
-        return this;
-    }
+    DEV, PROD, QA, UAT
 }

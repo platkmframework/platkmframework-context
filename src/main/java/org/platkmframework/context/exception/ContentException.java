@@ -1,6 +1,6 @@
 /**
  * ****************************************************************************
- *  Copyright(c) 2023 the original author Eduardo Iglesias Taylor.
+ *  Copyright(c) 2025 the original author Eduardo Iglesias Taylor.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
  *  	Eduardo Iglesias Taylor - initial API and implementation
  * *****************************************************************************
  */
-package org.platkmframework.content.project;
+package org.platkmframework.context.exception;
 
 /**
  *   Author:
@@ -26,7 +26,31 @@ package org.platkmframework.content.project;
  *   Contributors:
  *   	Eduardo Iglesias - initial API and implementation
  */
-public enum EnvironmentType {
+public class ContentException extends RuntimeException{
 
-    DEV, PROD, QA, UAT
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ContentException() {
+		super();
+	}
+
+	public ContentException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+	}
+
+	public ContentException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public ContentException(String message) {
+		super(message);
+	}
+
+	public ContentException(Throwable cause) {
+		super(cause);
+	}
+
 }
